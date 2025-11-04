@@ -10,7 +10,18 @@ You don’t have to:
 Everything works automatically in response to events — that’s called Event-Driven Architecture.
 
 ---
+### Requirments
+Implementation Steps: 
+1. Create a Lambda to process or log file metadata. 
+2. Configure S3 to trigger on PUT event. 
+3. Upload file to S3 and observe logs. 
+4. Use IAM roles for permissioning. 
+### Hints: 
+• Log full event structure to understand payload. 
+### Expected Outcome: 
+• Lambda executes automatically after file upload.
 
+---
 ## 🏗️ Workflow
 S3 File Upload  →  Lambda Triggered  →  Logs to CloudWatch
 
